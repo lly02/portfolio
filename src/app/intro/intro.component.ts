@@ -1,13 +1,12 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgOptimizedImage } from '@angular/common';
 
 @Component({
   selector: 'app-intro',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, NgOptimizedImage],
   templateUrl: './intro.component.html',
-  styleUrls: ['./intro.component.css']
+  styleUrls: ['./intro.component.css'],
 })
-export class IntroComponent {
-
-}
+export class IntroComponent {}
