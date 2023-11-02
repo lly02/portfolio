@@ -1,8 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .header-text {
+    @apply text-accent text-6xl;
+  }
+
+  .sub-header-text {
+    @apply text-accent text-4xl;
+  }
+
+  b {
+    @apply italic text-accent underline;
+  }
+
+  .about-me-sub-component {
+    @apply flex-1 flex flex-col md:flex-row md:space-x-10 px-5 space-y-5 md:space-y-0;
+  }
+
+  .about-me-sub-component-header {
+    @apply flex-1 md:text-right text-center;
+  }
+
+  .about-me-sub-component-content {
+    @apply flex-1 text-center md:text-left space-y-2;
+  }
+
+  .rtl {
+    direction: rtl;
+  }
+
+  .ltr {
+    direction: ltr;
+  }
+}
 
 * {
   font-family: "Shantell sans", cursive;
@@ -12,8 +45,4 @@ h1,
 h2,
 h3 {
   font-family: "Montserrat", sans-serif;
-}
-
-h1 {
-  text-shadow: 1px 1px 5px black;
 }
